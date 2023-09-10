@@ -1,0 +1,3903 @@
+Starting ChromeDriver 116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382}) on port 9515
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1694270459.312][INFO]: [fb59e700990bb50f700c8d36b095de41] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [  ],
+            "w3c": true
+         }
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1694270459.312][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1694270459.312][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1694270459.313][INFO]: Launching chrome: /opt/google/chrome/chrome --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging=stderr --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/tmp/.org.chromium.Chromium.RzMsPB data:,
+[60026:60026:0909/201059.333538:WARNING:chrome_main_delegate.cc(596)] This is Chrome version 116.0.5845.140 (not a warning)
+[60026:60026:0909/201059.459114:INFO:chrome_browser_cloud_management_controller.cc(168)] Starting CBCM Controller Initialization
+[60026:60026:0909/201059.459160:INFO:chrome_browser_cloud_management_controller.cc(196)] No machine level policy manager exists.
+
+DevTools listening on ws://127.0.0.1:34891/devtools/browser/a580cf71-014c-4719-b122-8cdb8ee8db03
+[1694270459.517][DEBUG]: DevTools HTTP Request: http://localhost:34891/json/version
+[60026:60026:0909/201059.582452:WARNING:bluez_dbus_manager.cc(247)] Floss manager not present, cannot set Floss enable/disable.
+[60026:60026:0909/201059.582654:ERROR:object_proxy.cc(590)] Failed to call method: org.freedesktop.portal.Settings.Read: object_path= /org/freedesktop/portal/desktop: org.freedesktop.portal.Error.NotFound: Requested setting not found
+[1694270459.591][DEBUG]: DevTools HTTP Response: {
+   "Browser": "Chrome/116.0.5845.140",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+   "V8-Version": "11.6.189.19",
+   "WebKit-Version": "537.36 (@46fa58c804a9efde819900e8cee01821bde4576f)",
+   "webSocketDebuggerUrl": "ws://localhost:34891/devtools/browser/a580cf71-014c-4719-b122-8cdb8ee8db03"
+}
+
+[1694270459.591][DEBUG]: DevTools HTTP Request: http://localhost:34891/json/list
+[1694270459.598][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:34891/devtools/page/DC7658C76CEE7B2829DD6768A0EE1B81",
+   "id": "DC7658C76CEE7B2829DD6768A0EE1B81",
+   "title": "",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:34891/devtools/page/DC7658C76CEE7B2829DD6768A0EE1B81"
+} ]
+
+[1694270459.598][INFO]: resolved localhost to ["127.0.0.1"]
+[1694270459.599][DEBUG]: DevTools WebSocket Command: Target.getTargets (id=1) (session_id=) browser {
+}
+[1694270459.600][DEBUG]: DevTools WebSocket Response: Target.getTargets (id=1) (session_id=) browser {
+   "targetInfos": [ {
+      "attached": false,
+      "browserContextId": "F2C087C6DB94EECFC0246D3A47574731",
+      "canAccessOpener": false,
+      "targetId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+      "title": "",
+      "type": "page",
+      "url": "data:,"
+   } ]
+}
+[1694270459.600][DEBUG]: DevTools WebSocket Command: Target.attachToTarget (id=2) (session_id=) browser {
+   "flatten": true,
+   "targetId": "DC7658C76CEE7B2829DD6768A0EE1B81"
+}
+[1694270459.602][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=) browser {
+   "sessionId": "91D9CBED2154C5E5667A7C561AD0E138",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "F2C087C6DB94EECFC0246D3A47574731",
+      "canAccessOpener": false,
+      "targetId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+      "title": "",
+      "type": "page",
+      "url": "data:,"
+   },
+   "waitingForDebugger": false
+}
+[1694270459.602][DEBUG]: DevTools WebSocket Response: Target.attachToTarget (id=2) (session_id=) browser {
+   "sessionId": "91D9CBED2154C5E5667A7C561AD0E138"
+}
+[1694270459.602][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=3) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1694270459.602][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=4) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1694270459.602][DEBUG]: DevTools WebSocket Command: Log.enable (id=5) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270459.602][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=6) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1694270459.602][DEBUG]: DevTools WebSocket Command: Page.enable (id=7) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270459.602][DEBUG]: DevTools WebSocket Command: Page.enable (id=8) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+MESA-INTEL: warning: Performance support disabled, consider sysctl dev.i915.perf_stream_paranoid=0
+
+[60064:60064:0909/201100.600148:WARNING:sandbox_linux.cc(393)] InitializeSandbox() called with multiple threads in process gpu-process.
+[1694270460.624][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=3) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "identifier": "1"
+}
+[1694270460.624][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=4) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1694270460.624][DEBUG]: DevTools WebSocket Response: Log.enable (id=5) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270460.624][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=6) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270460.624][DEBUG]: DevTools WebSocket Response: Page.enable (id=7) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270460.624][DEBUG]: DevTools WebSocket Response: Page.enable (id=8) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270460.624][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=9) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270460.625][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "timestamp": 104039.108679
+}
+[1694270460.627][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "DC7658C76CEE7B2829DD6768A0EE1B81"
+}
+[1694270460.627][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "timestamp": 104039.10884
+}
+[1694270460.627][DEBUG]: DevTools WebSocket Event: Page.frameResized (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270460.627][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "context": {
+      "auxData": {
+         "frameId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://",
+      "uniqueId": "6224996215316747955.-5068429809688383993"
+   }
+}
+[1694270460.627][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=9) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270460.627][DEBUG]: DevTools WebSocket Command: Page.enable (id=10) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270460.627][DEBUG]: DevTools WebSocket Response: Page.enable (id=10) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270460.627][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=11) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270460.628][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=11) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270460.628][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=12) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270460.628][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=12) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "",
+         "gatedAPIFeatures": [  ],
+         "id": "DC7658C76CEE7B2829DD6768A0EE1B81",
+         "loaderId": "9A2036C2E41B4BAE60523A0A3E68B568",
+         "mimeType": "text/plain",
+         "secureContextType": "InsecureScheme",
+         "securityOrigin": "://",
+         "url": "data:,"
+      }
+   }
+}
+[1694270460.628][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=13) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270460.628][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=13) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "",
+         "gatedAPIFeatures": [  ],
+         "id": "DC7658C76CEE7B2829DD6768A0EE1B81",
+         "loaderId": "9A2036C2E41B4BAE60523A0A3E68B568",
+         "mimeType": "text/plain",
+         "secureContextType": "InsecureScheme",
+         "securityOrigin": "://",
+         "url": "data:,"
+      }
+   }
+}
+[1694270460.628][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=14) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "a61dca9f-b0f6-43b7-a6d2-34ddc3561eff",
+   "uniqueContextId": "6224996215316747955.-5068429809688383993"
+}
+[1694270460.630][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=14) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-6707345742344136795.1.1",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":1}"
+         } ]
+      }
+   }
+}
+[1694270460.630][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=15) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "objectGroup": "a61dca9f-b0f6-43b7-a6d2-34ddc3561eff"
+}
+[1694270460.630][INFO]: [fb59e700990bb50f700c8d36b095de41] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "116.0.5845.140",
+      "chrome": {
+         "chromedriverVersion": "116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382})",
+         "userDataDir": "/tmp/.org.chromium.Chromium.RzMsPB"
+      },
+      "fedcm:accounts": true,
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:34891"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "linux",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "fb59e700990bb50f700c8d36b095de41"
+}
+[1694270460.630][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=15) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270460.645][INFO]: [fb59e700990bb50f700c8d36b095de41] COMMAND MaximizeWindow {
+   "windowHandle": "current"
+}
+[1694270460.645][INFO]: Waiting for pending navigations...
+[1694270460.645][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=16) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270460.667][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=16) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270460.667][INFO]: Done waiting for pending navigations. Status: ok
+[1694270460.667][DEBUG]: DevTools WebSocket Command: Browser.getWindowForTarget (id=17) (session_id=) browser {
+   "targetId": "DC7658C76CEE7B2829DD6768A0EE1B81"
+}
+[1694270460.667][DEBUG]: DevTools WebSocket Response: Browser.getWindowForTarget (id=17) (session_id=) browser {
+   "bounds": {
+      "height": 1033,
+      "left": 76,
+      "top": 37,
+      "width": 912,
+      "windowState": "normal"
+   },
+   "windowId": 369912995
+}
+[1694270460.668][DEBUG]: DevTools WebSocket Command: Browser.setWindowBounds (id=18) (session_id=) browser {
+   "bounds": {
+      "windowState": "maximized"
+   },
+   "windowId": 369912995
+}
+[1694270460.668][DEBUG]: DevTools WebSocket Response: Browser.setWindowBounds (id=18) (session_id=) browser {
+}
+[1694270460.768][DEBUG]: DevTools WebSocket Command: Browser.getWindowBounds (id=19) (session_id=) browser {
+   "windowId": 369912995
+}
+[1694270460.768][DEBUG]: DevTools WebSocket Event: Page.frameResized (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270460.769][DEBUG]: DevTools WebSocket Response: Browser.getWindowBounds (id=19) (session_id=) browser {
+   "bounds": {
+      "height": 1053,
+      "left": 66,
+      "top": 27,
+      "width": 1854,
+      "windowState": "maximized"
+   }
+}
+[1694270460.769][DEBUG]: DevTools WebSocket Command: Browser.getWindowForTarget (id=20) (session_id=) browser {
+   "targetId": "DC7658C76CEE7B2829DD6768A0EE1B81"
+}
+[1694270460.770][DEBUG]: DevTools WebSocket Response: Browser.getWindowForTarget (id=20) (session_id=) browser {
+   "bounds": {
+      "height": 1053,
+      "left": 66,
+      "top": 27,
+      "width": 1854,
+      "windowState": "maximized"
+   },
+   "windowId": 369912995
+}
+[1694270460.770][INFO]: Waiting for pending navigations...
+[1694270460.770][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=21) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270460.772][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=21) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270460.772][INFO]: Done waiting for pending navigations. Status: ok
+[1694270460.772][INFO]: [fb59e700990bb50f700c8d36b095de41] RESPONSE MaximizeWindow {
+   "height": 1053,
+   "width": 1854,
+   "x": 66,
+   "y": 27
+}
+[1694270460.793][INFO]: [fb59e700990bb50f700c8d36b095de41] COMMAND Navigate {
+   "url": "https://blacklivesmatter.com/"
+}
+[1694270460.793][INFO]: Waiting for pending navigations...
+[1694270460.793][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=22) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270460.796][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=22) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270460.796][INFO]: Done waiting for pending navigations. Status: ok
+[1694270460.796][DEBUG]: DevTools WebSocket Command: Page.navigate (id=23) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "url": "https://blacklivesmatter.com/"
+}
+[1694270461.317][DEBUG]: DevTools WebSocket Response: Page.navigate (id=23) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+   "loaderId": "1AD8AFAE7DCAE46A574BFB083F76B008"
+}
+[1694270461.317][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=24) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "document.URL"
+}
+[1694270461.319][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270461.320][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "DC7658C76CEE7B2829DD6768A0EE1B81"
+}
+[1694270461.347][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270461.347][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "blacklivesmatter.com",
+      "gatedAPIFeatures": [  ],
+      "id": "DC7658C76CEE7B2829DD6768A0EE1B81",
+      "loaderId": "1AD8AFAE7DCAE46A574BFB083F76B008",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://blacklivesmatter.com",
+      "url": "https://blacklivesmatter.com/"
+   },
+   "type": "Navigation"
+}
+[1694270461.347][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "context": {
+      "auxData": {
+         "frameId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://blacklivesmatter.com",
+      "uniqueId": "6820428157629571333.-5751087653600026105"
+   }
+}
+[1694270461.353][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=24) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "type": "string",
+      "value": "https://blacklivesmatter.com/"
+   }
+}
+[1694270461.353][INFO]: Waiting for pending navigations...
+[1694270461.354][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=25) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270461.359][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=25) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[60026:60026:0909/201101.547358:INFO:CONSOLE(2)] "JQMIGRATE: Migrate is installed, version 3.4.1", source: https://blacklivesmatter.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1 (2)
+[1694270461.553][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "args": [ {
+      "type": "string",
+      "value": "JQMIGRATE: Migrate is installed, version 3.4.1"
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 980,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "9",
+         "url": "https://blacklivesmatter.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
+      }, {
+         "columnNumber": 261,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "9",
+         "url": "https://blacklivesmatter.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
+      }, {
+         "columnNumber": 278,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "9",
+         "url": "https://blacklivesmatter.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
+      } ]
+   },
+   "timestamp": 1.694270461545738e+12,
+   "type": "log"
+}
+[1694270461.553][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=26) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270461.597][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=26) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270461.682][DEBUG]: DevTools WebSocket Event: Page.frameResized (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270461.682][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=27) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270461.701][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=27) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270461.770][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "269F10BFFF86DE7B41F8B729967CDBB7",
+   "parentFrameId": "DC7658C76CEE7B2829DD6768A0EE1B81"
+}
+[1694270461.770][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=28) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270461.770][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "269F10BFFF86DE7B41F8B729967CDBB7"
+}
+[1694270461.774][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "269F10BFFF86DE7B41F8B729967CDBB7",
+      "loaderId": "DAFE46964ED03218474DF24CF33B3BE5",
+      "mimeType": "text/html",
+      "name": "gform_ajax_frame_29",
+      "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1694270461.774][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "context": {
+      "auxData": {
+         "frameId": "269F10BFFF86DE7B41F8B729967CDBB7",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://blacklivesmatter.com",
+      "uniqueId": "5550183191607180754.-7117811646313550377"
+   }
+}
+[1694270461.774][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "269F10BFFF86DE7B41F8B729967CDBB7"
+}
+[1694270461.778][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=28) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270461.860][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "940A8934B7B21E795DB245965EDD21C0",
+   "parentFrameId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 500,
+         "functionName": "",
+         "lineNumber": 433,
+         "scriptId": "43",
+         "url": "https://blacklivesmatter.com/"
+      }, {
+         "columnNumber": 1079,
+         "functionName": "",
+         "lineNumber": 433,
+         "scriptId": "43",
+         "url": "https://blacklivesmatter.com/"
+      } ]
+   }
+}
+[1694270461.860][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=29) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270461.862][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "940A8934B7B21E795DB245965EDD21C0"
+}
+[1694270461.866][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "940A8934B7B21E795DB245965EDD21C0",
+      "loaderId": "F4B302A0E9C799B1DD1355399A32EA46",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1694270461.866][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "context": {
+      "auxData": {
+         "frameId": "940A8934B7B21E795DB245965EDD21C0",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 3,
+      "name": "",
+      "origin": "https://blacklivesmatter.com",
+      "uniqueId": "-5118787583250202560.-7176807144606254043"
+   }
+}
+[1694270461.866][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "940A8934B7B21E795DB245965EDD21C0"
+}
+[1694270461.867][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=29) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270461.939][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "timestamp": 104040.418316
+}
+[1694270461.939][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=30) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270461.955][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=30) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270462.120][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "5C60A6431F80F09BDAC46EBED9D8C5B5",
+   "parentFrameId": "940A8934B7B21E795DB245965EDD21C0",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 6869,
+         "functionName": "v",
+         "lineNumber": 0,
+         "scriptId": "58",
+         "url": "https://blacklivesmatter.com/cdn-cgi/challenge-platform/scripts/jsd/main.js"
+      }, {
+         "columnNumber": 6551,
+         "functionName": "f",
+         "lineNumber": 0,
+         "scriptId": "58",
+         "url": "https://blacklivesmatter.com/cdn-cgi/challenge-platform/scripts/jsd/main.js"
+      }, {
+         "columnNumber": 6610,
+         "functionName": "x",
+         "lineNumber": 0,
+         "scriptId": "58",
+         "url": "https://blacklivesmatter.com/cdn-cgi/challenge-platform/scripts/jsd/main.js"
+      }, {
+         "columnNumber": 4048,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "58",
+         "url": "https://blacklivesmatter.com/cdn-cgi/challenge-platform/scripts/jsd/main.js"
+      }, {
+         "columnNumber": 7321,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "58",
+         "url": "https://blacklivesmatter.com/cdn-cgi/challenge-platform/scripts/jsd/main.js"
+      } ]
+   }
+}
+[1694270462.120][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=31) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270462.120][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "5C60A6431F80F09BDAC46EBED9D8C5B5"
+}
+[1694270462.123][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "5C60A6431F80F09BDAC46EBED9D8C5B5",
+      "loaderId": "52584788120577BECE575EFDB73236D7",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "940A8934B7B21E795DB245965EDD21C0",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1694270462.123][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "context": {
+      "auxData": {
+         "frameId": "5C60A6431F80F09BDAC46EBED9D8C5B5",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 4,
+      "name": "",
+      "origin": "https://blacklivesmatter.com",
+      "uniqueId": "8706524373586173731.-800961243004540271"
+   }
+}
+[1694270462.123][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "5C60A6431F80F09BDAC46EBED9D8C5B5"
+}
+[1694270462.211][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "5C60A6431F80F09BDAC46EBED9D8C5B5",
+   "reason": "remove"
+}
+[1694270462.212][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "executionContextId": 4,
+   "executionContextUniqueId": "8706524373586173731.-800961243004540271"
+}
+[1694270462.212][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=31) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270462.634][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "timestamp": 104041.11079
+}
+[1694270462.634][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=32) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "6820428157629571333.-5751087653600026105"
+}
+[1694270462.635][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "DC7658C76CEE7B2829DD6768A0EE1B81"
+}
+[1694270462.645][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=32) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1694270462.645][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=33) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270462.651][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=33) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270462.651][INFO]: Done waiting for pending navigations. Status: ok
+[1694270462.651][INFO]: [fb59e700990bb50f700c8d36b095de41] RESPONSE Navigate
+[1694270462.750][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "57A2DFA73B84ABA039D9B19B994F0762",
+   "parentFrameId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 71107,
+         "functionName": "d",
+         "lineNumber": 23,
+         "scriptId": "18",
+         "url": "https://connect.facebook.net/en_US/fbevents.js"
+      }, {
+         "columnNumber": 69442,
+         "functionName": "B",
+         "lineNumber": 23,
+         "scriptId": "18",
+         "url": "https://connect.facebook.net/en_US/fbevents.js"
+      }, {
+         "columnNumber": 32779,
+         "functionName": "value",
+         "lineNumber": 23,
+         "scriptId": "18",
+         "url": "https://connect.facebook.net/en_US/fbevents.js"
+      }, {
+         "columnNumber": 31498,
+         "functionName": "value",
+         "lineNumber": 23,
+         "scriptId": "18",
+         "url": "https://connect.facebook.net/en_US/fbevents.js"
+      }, {
+         "columnNumber": 31048,
+         "functionName": "value",
+         "lineNumber": 23,
+         "scriptId": "18",
+         "url": "https://connect.facebook.net/en_US/fbevents.js"
+      }, {
+         "columnNumber": 3407,
+         "functionName": "D",
+         "lineNumber": 113,
+         "scriptId": "57",
+         "url": "https://connect.facebook.net/signals/config/642342703271263?v=2.9.125&r=stable&domain=blacklivesmatter.com"
+      }, {
+         "columnNumber": 4057,
+         "functionName": "",
+         "lineNumber": 113,
+         "scriptId": "57",
+         "url": "https://connect.facebook.net/signals/config/642342703271263?v=2.9.125&r=stable&domain=blacklivesmatter.com"
+      } ]
+   }
+}
+[1694270462.752][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "57A2DFA73B84ABA039D9B19B994F0762"
+}
+[1694270462.765][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "57A2DFA73B84ABA039D9B19B994F0762",
+      "loaderId": "2EECDDE265A26BF68765E632976D2452",
+      "mimeType": "text/html",
+      "name": "fb03685891809743842",
+      "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1694270462.765][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "context": {
+      "auxData": {
+         "frameId": "57A2DFA73B84ABA039D9B19B994F0762",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 5,
+      "name": "",
+      "origin": "https://blacklivesmatter.com",
+      "uniqueId": "8132480802433509730.8608771415996825193"
+   }
+}
+[1694270462.765][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "57A2DFA73B84ABA039D9B19B994F0762"
+}
+[1694270462.768][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "60092.194",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 403 ()",
+      "timestamp": 1.6942704627668108e+12,
+      "url": "https://blacklivesmatter.com/wp-content/uploads/2019/09/cropped-siteicon-blm-black-32x32.png"
+   }
+}
+[1694270462.769][DEBUG]: DevTools WebSocket Event: Page.frameScheduledNavigation (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "delay": 0,
+   "frameId": "57A2DFA73B84ABA039D9B19B994F0762",
+   "reason": "formSubmissionPost",
+   "url": "https://www.facebook.com/tr/"
+}
+[1694270462.770][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "disposition": "currentTab",
+   "frameId": "57A2DFA73B84ABA039D9B19B994F0762",
+   "reason": "formSubmissionPost",
+   "url": "https://www.facebook.com/tr/"
+}
+[1694270462.770][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "57A2DFA73B84ABA039D9B19B994F0762"
+}
+[1694270462.780][DEBUG]: DevTools WebSocket Event: Page.frameClearedScheduledNavigation (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "57A2DFA73B84ABA039D9B19B994F0762"
+}
+[1694270462.863][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "60092.195",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 403 ()",
+      "timestamp": 1.694270462860954e+12,
+      "url": "https://blacklivesmatter.com/wp-content/uploads/2019/09/cropped-siteicon-blm-black-192x192.png"
+   }
+}
+[1694270462.910][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "sessionId": "2B289242097635B5ADB89732B47615D7",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "F2C087C6DB94EECFC0246D3A47574731",
+      "canAccessOpener": false,
+      "targetId": "57A2DFA73B84ABA039D9B19B994F0762",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1694270462.910][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=34) (session_id=2B289242097635B5ADB89732B47615D7) 2B289242097635B5ADB89732B47615D7 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1694270462.911][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=35) (session_id=2B289242097635B5ADB89732B47615D7) 2B289242097635B5ADB89732B47615D7 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1694270462.911][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=36) (session_id=2B289242097635B5ADB89732B47615D7) 2B289242097635B5ADB89732B47615D7 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1694270462.911][DEBUG]: DevTools WebSocket Command: Page.enable (id=37) (session_id=2B289242097635B5ADB89732B47615D7) 2B289242097635B5ADB89732B47615D7 {
+}
+[1694270462.911][DEBUG]: DevTools WebSocket Command: Page.enable (id=38) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270462.913][DEBUG]: DevTools WebSocket Response: Page.enable (id=38) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270462.915][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "F2C087C6DB94EECFC0246D3A47574731",
+      "canAccessOpener": false,
+      "targetId": "57A2DFA73B84ABA039D9B19B994F0762",
+      "title": "https://www.facebook.com/tr/",
+      "type": "iframe",
+      "url": "https://www.facebook.com/tr/"
+   }
+}
+[1694270462.915][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "57A2DFA73B84ABA039D9B19B994F0762"
+}
+[1694270462.915][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "57A2DFA73B84ABA039D9B19B994F0762",
+   "reason": "swap"
+}
+[1694270462.915][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "executionContextId": 5,
+   "executionContextUniqueId": "8132480802433509730.8608771415996825193"
+}
+[1694270462.917][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=34) (session_id=2B289242097635B5ADB89732B47615D7) 2B289242097635B5ADB89732B47615D7 {
+   "identifier": "1"
+}
+[1694270462.917][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=35) (session_id=2B289242097635B5ADB89732B47615D7) 2B289242097635B5ADB89732B47615D7 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1694270462.917][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=36) (session_id=2B289242097635B5ADB89732B47615D7) 2B289242097635B5ADB89732B47615D7 {
+}
+[1694270462.917][DEBUG]: DevTools WebSocket Response: Page.enable (id=37) (session_id=2B289242097635B5ADB89732B47615D7) 2B289242097635B5ADB89732B47615D7 {
+}
+[1694270462.917][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=39) (session_id=2B289242097635B5ADB89732B47615D7) 2B289242097635B5ADB89732B47615D7 {
+}
+[1694270462.920][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=2B289242097635B5ADB89732B47615D7) 2B289242097635B5ADB89732B47615D7 {
+   "timestamp": 104041.40384
+}
+[1694270462.920][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=2B289242097635B5ADB89732B47615D7) 2B289242097635B5ADB89732B47615D7 {
+   "frameId": "57A2DFA73B84ABA039D9B19B994F0762"
+}
+[1694270462.920][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=2B289242097635B5ADB89732B47615D7) 2B289242097635B5ADB89732B47615D7 {
+   "timestamp": 104041.404052
+}
+[1694270462.921][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "57A2DFA73B84ABA039D9B19B994F0762",
+   "reason": "remove"
+}
+[1694270462.921][DEBUG]: DevTools WebSocket Event: Target.detachedFromTarget (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "sessionId": "2B289242097635B5ADB89732B47615D7",
+   "targetId": "57A2DFA73B84ABA039D9B19B994F0762"
+}
+[1694270465.680][INFO]: [fb59e700990bb50f700c8d36b095de41] COMMAND FindElements {
+   "using": "css selector",
+   "value": "#menu-primary-menu > li.menu-highlight.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-5749.nav-item > a"
+}
+[1694270465.680][INFO]: Waiting for pending navigations...
+[1694270465.680][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=40) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270465.681][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=40) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270465.682][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=41) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "document",
+   "objectGroup": "87038c8c-3ca8-4a36-bed7-cc0f0aa75512"
+}
+[1694270465.683][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=41) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "6246268923087373101.1.1",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1694270465.684][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=42) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "objectId": "6246268923087373101.1.1"
+}
+[1694270465.685][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=42) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "https://blacklivesmatter.com/",
+      "childNodeCount": 2,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "https://blacklivesmatter.com/",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1694270465.685][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=43) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "objectGroup": "87038c8c-3ca8-4a36-bed7-cc0f0aa75512"
+}
+[1694270465.685][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=44) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "6820428157629571333.-5751087653600026105"
+}
+[1694270465.686][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=43) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270465.687][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=44) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1694270465.687][INFO]: Done waiting for pending navigations. Status: ok
+[1694270465.687][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=45) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270465.689][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=45) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "269F10BFFF86DE7B41F8B729967CDBB7",
+            "loaderId": "DAFE46964ED03218474DF24CF33B3BE5",
+            "mimeType": "text/html",
+            "name": "gform_ajax_frame_29",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "940A8934B7B21E795DB245965EDD21C0",
+            "loaderId": "F4B302A0E9C799B1DD1355399A32EA46",
+            "mimeType": "text/html",
+            "name": "",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "blacklivesmatter.com",
+         "gatedAPIFeatures": [  ],
+         "id": "DC7658C76CEE7B2829DD6768A0EE1B81",
+         "loaderId": "1AD8AFAE7DCAE46A574BFB083F76B008",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://blacklivesmatter.com",
+         "url": "https://blacklivesmatter.com/"
+      }
+   }
+}
+[1694270465.689][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=46) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270465.691][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=46) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "269F10BFFF86DE7B41F8B729967CDBB7",
+            "loaderId": "DAFE46964ED03218474DF24CF33B3BE5",
+            "mimeType": "text/html",
+            "name": "gform_ajax_frame_29",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "940A8934B7B21E795DB245965EDD21C0",
+            "loaderId": "F4B302A0E9C799B1DD1355399A32EA46",
+            "mimeType": "text/html",
+            "name": "",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "blacklivesmatter.com",
+         "gatedAPIFeatures": [  ],
+         "id": "DC7658C76CEE7B2829DD6768A0EE1B81",
+         "loaderId": "1AD8AFAE7DCAE46A574BFB083F76B008",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://blacklivesmatter.com",
+         "url": "https://blacklivesmatter.com/"
+      }
+   }
+}
+[1694270465.696][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=47) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "ca81de15-cbf4-43d8-9db0-0bfb57613513",
+   "uniqueContextId": "6820428157629571333.-5751087653600026105"
+}
+[1694270465.721][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=47) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "className": "Array",
+      "description": "Array(2)",
+      "objectId": "6246268923087373101.1.2",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":0}]}"
+         }, {
+            "type": "node",
+            "value": {
+               "attributes": {
+                  "class": "nav-link",
+                  "href": "https://secure.actblue.com/donate/2301_website_blm_gnf",
+                  "title": "Donate"
+               },
+               "backendNodeId": 28,
+               "childNodeCount": 1,
+               "localName": "a",
+               "namespaceURI": "http://www.w3.org/1999/xhtml",
+               "nodeType": 1,
+               "shadowRoot": null
+            }
+         } ]
+      }
+   }
+}
+[1694270465.721][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=48) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "objectGroup": "ca81de15-cbf4-43d8-9db0-0bfb57613513"
+}
+[1694270465.722][INFO]: Waiting for pending navigations...
+[1694270465.722][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=49) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270465.723][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=48) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270465.723][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=49) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270465.723][INFO]: Done waiting for pending navigations. Status: ok
+[1694270465.723][INFO]: [fb59e700990bb50f700c8d36b095de41] RESPONSE FindElements [ {
+   "element-6066-11e4-a52e-4f735466cecf": "1AD8AFAE7DCAE46A574BFB083F76B008_element_28"
+} ]
+[1694270465.735][INFO]: [fb59e700990bb50f700c8d36b095de41] COMMAND ClickElement {
+   "id": "1AD8AFAE7DCAE46A574BFB083F76B008_element_28"
+}
+[1694270465.735][INFO]: Waiting for pending navigations...
+[1694270465.735][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=50) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270465.737][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=50) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270465.737][INFO]: Done waiting for pending navigations. Status: ok
+[1694270465.737][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=51) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270465.739][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=51) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "269F10BFFF86DE7B41F8B729967CDBB7",
+            "loaderId": "DAFE46964ED03218474DF24CF33B3BE5",
+            "mimeType": "text/html",
+            "name": "gform_ajax_frame_29",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "940A8934B7B21E795DB245965EDD21C0",
+            "loaderId": "F4B302A0E9C799B1DD1355399A32EA46",
+            "mimeType": "text/html",
+            "name": "",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "blacklivesmatter.com",
+         "gatedAPIFeatures": [  ],
+         "id": "DC7658C76CEE7B2829DD6768A0EE1B81",
+         "loaderId": "1AD8AFAE7DCAE46A574BFB083F76B008",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://blacklivesmatter.com",
+         "url": "https://blacklivesmatter.com/"
+      }
+   }
+}
+[1694270465.739][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=52) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "backendNodeId": 28,
+   "objectGroup": "6b2f665b-1902-4bc1-9807-431859feb003"
+}
+[1694270465.740][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=52) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "object": {
+      "className": "HTMLAnchorElement",
+      "description": "a.nav-link",
+      "objectId": "6246268923087373101.1.3",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1694270465.740][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=53) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270465.742][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=53) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "269F10BFFF86DE7B41F8B729967CDBB7",
+            "loaderId": "DAFE46964ED03218474DF24CF33B3BE5",
+            "mimeType": "text/html",
+            "name": "gform_ajax_frame_29",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "940A8934B7B21E795DB245965EDD21C0",
+            "loaderId": "F4B302A0E9C799B1DD1355399A32EA46",
+            "mimeType": "text/html",
+            "name": "",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "blacklivesmatter.com",
+         "gatedAPIFeatures": [  ],
+         "id": "DC7658C76CEE7B2829DD6768A0EE1B81",
+         "loaderId": "1AD8AFAE7DCAE46A574BFB083F76B008",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://blacklivesmatter.com",
+         "url": "https://blacklivesmatter.com/"
+      }
+   }
+}
+[1694270465.744][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=54) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "arguments": [ {
+      "objectId": "6246268923087373101.1.3"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "6b2f665b-1902-4bc1-9807-431859feb003",
+   "uniqueContextId": "6820428157629571333.-5751087653600026105"
+}
+[1694270465.751][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=54) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "6246268923087373101.1.4",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"a\"}"
+         } ]
+      }
+   }
+}
+[1694270465.751][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=55) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "objectGroup": "6b2f665b-1902-4bc1-9807-431859feb003"
+}
+[1694270465.754][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=56) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270465.755][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=55) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270465.756][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=56) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "269F10BFFF86DE7B41F8B729967CDBB7",
+            "loaderId": "DAFE46964ED03218474DF24CF33B3BE5",
+            "mimeType": "text/html",
+            "name": "gform_ajax_frame_29",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "940A8934B7B21E795DB245965EDD21C0",
+            "loaderId": "F4B302A0E9C799B1DD1355399A32EA46",
+            "mimeType": "text/html",
+            "name": "",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "blacklivesmatter.com",
+         "gatedAPIFeatures": [  ],
+         "id": "DC7658C76CEE7B2829DD6768A0EE1B81",
+         "loaderId": "1AD8AFAE7DCAE46A574BFB083F76B008",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://blacklivesmatter.com",
+         "url": "https://blacklivesmatter.com/"
+      }
+   }
+}
+[1694270465.756][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=57) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "backendNodeId": 28,
+   "objectGroup": "cc776abd-fbeb-454a-abd9-b90c96ffb497"
+}
+[1694270465.758][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=57) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "object": {
+      "className": "HTMLAnchorElement",
+      "description": "a.nav-link",
+      "objectId": "6246268923087373101.1.5",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1694270465.758][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=58) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270465.760][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=58) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "269F10BFFF86DE7B41F8B729967CDBB7",
+            "loaderId": "DAFE46964ED03218474DF24CF33B3BE5",
+            "mimeType": "text/html",
+            "name": "gform_ajax_frame_29",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "940A8934B7B21E795DB245965EDD21C0",
+            "loaderId": "F4B302A0E9C799B1DD1355399A32EA46",
+            "mimeType": "text/html",
+            "name": "",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "blacklivesmatter.com",
+         "gatedAPIFeatures": [  ],
+         "id": "DC7658C76CEE7B2829DD6768A0EE1B81",
+         "loaderId": "1AD8AFAE7DCAE46A574BFB083F76B008",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://blacklivesmatter.com",
+         "url": "https://blacklivesmatter.com/"
+      }
+   }
+}
+[1694270465.761][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=59) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "arguments": [ {
+      "objectId": "6246268923087373101.1.5"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "cc776abd-fbeb-454a-abd9-b90c96ffb497",
+   "uniqueContextId": "6820428157629571333.-5751087653600026105"
+}
+[1694270465.764][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=59) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "6246268923087373101.1.6",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"a\"}"
+         } ]
+      }
+   }
+}
+[1694270465.764][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=60) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "objectGroup": "cc776abd-fbeb-454a-abd9-b90c96ffb497"
+}
+[1694270465.765][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=61) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270465.766][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=60) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270465.767][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=61) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "269F10BFFF86DE7B41F8B729967CDBB7",
+            "loaderId": "DAFE46964ED03218474DF24CF33B3BE5",
+            "mimeType": "text/html",
+            "name": "gform_ajax_frame_29",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "940A8934B7B21E795DB245965EDD21C0",
+            "loaderId": "F4B302A0E9C799B1DD1355399A32EA46",
+            "mimeType": "text/html",
+            "name": "",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "blacklivesmatter.com",
+         "gatedAPIFeatures": [  ],
+         "id": "DC7658C76CEE7B2829DD6768A0EE1B81",
+         "loaderId": "1AD8AFAE7DCAE46A574BFB083F76B008",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://blacklivesmatter.com",
+         "url": "https://blacklivesmatter.com/"
+      }
+   }
+}
+[1694270465.767][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=62) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "backendNodeId": 28,
+   "objectGroup": "94fe69f3-b3c5-4625-a08f-fba39a533e40"
+}
+[1694270465.768][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=62) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "object": {
+      "className": "HTMLAnchorElement",
+      "description": "a.nav-link",
+      "objectId": "6246268923087373101.1.7",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1694270465.768][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=63) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270465.770][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=63) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "269F10BFFF86DE7B41F8B729967CDBB7",
+            "loaderId": "DAFE46964ED03218474DF24CF33B3BE5",
+            "mimeType": "text/html",
+            "name": "gform_ajax_frame_29",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "940A8934B7B21E795DB245965EDD21C0",
+            "loaderId": "F4B302A0E9C799B1DD1355399A32EA46",
+            "mimeType": "text/html",
+            "name": "",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "blacklivesmatter.com",
+         "gatedAPIFeatures": [  ],
+         "id": "DC7658C76CEE7B2829DD6768A0EE1B81",
+         "loaderId": "1AD8AFAE7DCAE46A574BFB083F76B008",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://blacklivesmatter.com",
+         "url": "https://blacklivesmatter.com/"
+      }
+   }
+}
+[1694270465.775][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=64) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "arguments": [ {
+      "objectId": "6246268923087373101.1.7"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "94fe69f3-b3c5-4625-a08f-fba39a533e40",
+   "uniqueContextId": "6820428157629571333.-5751087653600026105"
+}
+[1694270465.795][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=64) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "6246268923087373101.1.8",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":true}"
+         } ]
+      }
+   }
+}
+[1694270465.795][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=65) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "objectGroup": "94fe69f3-b3c5-4625-a08f-fba39a533e40"
+}
+[1694270465.796][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=66) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270465.797][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=65) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270465.797][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=66) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "269F10BFFF86DE7B41F8B729967CDBB7",
+            "loaderId": "DAFE46964ED03218474DF24CF33B3BE5",
+            "mimeType": "text/html",
+            "name": "gform_ajax_frame_29",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "940A8934B7B21E795DB245965EDD21C0",
+            "loaderId": "F4B302A0E9C799B1DD1355399A32EA46",
+            "mimeType": "text/html",
+            "name": "",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "blacklivesmatter.com",
+         "gatedAPIFeatures": [  ],
+         "id": "DC7658C76CEE7B2829DD6768A0EE1B81",
+         "loaderId": "1AD8AFAE7DCAE46A574BFB083F76B008",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://blacklivesmatter.com",
+         "url": "https://blacklivesmatter.com/"
+      }
+   }
+}
+[1694270465.798][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=67) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "backendNodeId": 28,
+   "objectGroup": "df7c5450-e207-4ecd-9b4e-d4dad42870ed"
+}
+[1694270465.799][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=67) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "object": {
+      "className": "HTMLAnchorElement",
+      "description": "a.nav-link",
+      "objectId": "6246268923087373101.1.9",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1694270465.799][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=68) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270465.801][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=68) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "269F10BFFF86DE7B41F8B729967CDBB7",
+            "loaderId": "DAFE46964ED03218474DF24CF33B3BE5",
+            "mimeType": "text/html",
+            "name": "gform_ajax_frame_29",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "940A8934B7B21E795DB245965EDD21C0",
+            "loaderId": "F4B302A0E9C799B1DD1355399A32EA46",
+            "mimeType": "text/html",
+            "name": "",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "blacklivesmatter.com",
+         "gatedAPIFeatures": [  ],
+         "id": "DC7658C76CEE7B2829DD6768A0EE1B81",
+         "loaderId": "1AD8AFAE7DCAE46A574BFB083F76B008",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://blacklivesmatter.com",
+         "url": "https://blacklivesmatter.com/"
+      }
+   }
+}
+[1694270465.804][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=69) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "arguments": [ {
+      "objectId": "6246268923087373101.1.9"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "df7c5450-e207-4ecd-9b4e-d4dad42870ed",
+   "uniqueContextId": "6820428157629571333.-5751087653600026105"
+}
+[1694270465.812][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=69) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "6246268923087373101.1.10",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":{\"left\":0,\"top\":0,\"height\":50,\"width\":149.546875}}"
+         } ]
+      }
+   }
+}
+[1694270465.813][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=70) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "objectGroup": "df7c5450-e207-4ecd-9b4e-d4dad42870ed"
+}
+[1694270465.813][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=71) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270465.814][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=70) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270465.815][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=71) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "269F10BFFF86DE7B41F8B729967CDBB7",
+            "loaderId": "DAFE46964ED03218474DF24CF33B3BE5",
+            "mimeType": "text/html",
+            "name": "gform_ajax_frame_29",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "940A8934B7B21E795DB245965EDD21C0",
+            "loaderId": "F4B302A0E9C799B1DD1355399A32EA46",
+            "mimeType": "text/html",
+            "name": "",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "blacklivesmatter.com",
+         "gatedAPIFeatures": [  ],
+         "id": "DC7658C76CEE7B2829DD6768A0EE1B81",
+         "loaderId": "1AD8AFAE7DCAE46A574BFB083F76B008",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://blacklivesmatter.com",
+         "url": "https://blacklivesmatter.com/"
+      }
+   }
+}
+[1694270465.815][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=72) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "backendNodeId": 28,
+   "objectGroup": "c282cd11-814c-4152-8a32-43a3bdd3c668"
+}
+[1694270465.817][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=72) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "object": {
+      "className": "HTMLAnchorElement",
+      "description": "a.nav-link",
+      "objectId": "6246268923087373101.1.11",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1694270465.817][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=73) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270465.818][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=73) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "269F10BFFF86DE7B41F8B729967CDBB7",
+            "loaderId": "DAFE46964ED03218474DF24CF33B3BE5",
+            "mimeType": "text/html",
+            "name": "gform_ajax_frame_29",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "940A8934B7B21E795DB245965EDD21C0",
+            "loaderId": "F4B302A0E9C799B1DD1355399A32EA46",
+            "mimeType": "text/html",
+            "name": "",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "blacklivesmatter.com",
+         "gatedAPIFeatures": [  ],
+         "id": "DC7658C76CEE7B2829DD6768A0EE1B81",
+         "loaderId": "1AD8AFAE7DCAE46A574BFB083F76B008",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://blacklivesmatter.com",
+         "url": "https://blacklivesmatter.com/"
+      }
+   }
+}
+[1694270465.824][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=74) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "arguments": [ {
+      "objectId": "6246268923087373101.1.11"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "c282cd11-814c-4152-8a32-43a3bdd3c668",
+   "uniqueContextId": "6820428157629571333.-5751087653600026105"
+}
+[1694270465.844][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=74) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "6246268923087373101.1.12",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":{\"x\":1523.953125,\"y\":91.5,\"clone\":{},\"ceil\":{},\"floor\":{},\"round\":{},\"translate\":{},\"scale\":{}}}"
+         } ]
+      }
+   }
+}
+[1694270465.844][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=75) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "objectGroup": "c282cd11-814c-4152-8a32-43a3bdd3c668"
+}
+[1694270465.845][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=76) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270465.845][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=75) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270465.846][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=76) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "269F10BFFF86DE7B41F8B729967CDBB7",
+            "loaderId": "DAFE46964ED03218474DF24CF33B3BE5",
+            "mimeType": "text/html",
+            "name": "gform_ajax_frame_29",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "940A8934B7B21E795DB245965EDD21C0",
+            "loaderId": "F4B302A0E9C799B1DD1355399A32EA46",
+            "mimeType": "text/html",
+            "name": "",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "blacklivesmatter.com",
+         "gatedAPIFeatures": [  ],
+         "id": "DC7658C76CEE7B2829DD6768A0EE1B81",
+         "loaderId": "1AD8AFAE7DCAE46A574BFB083F76B008",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://blacklivesmatter.com",
+         "url": "https://blacklivesmatter.com/"
+      }
+   }
+}
+[1694270465.847][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=77) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "backendNodeId": 28,
+   "objectGroup": "b738ead1-72d0-4cea-845b-54b875082ef2"
+}
+[1694270465.848][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=77) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "object": {
+      "className": "HTMLAnchorElement",
+      "description": "a.nav-link",
+      "objectId": "6246268923087373101.1.13",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1694270465.848][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=78) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270465.850][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=78) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "269F10BFFF86DE7B41F8B729967CDBB7",
+            "loaderId": "DAFE46964ED03218474DF24CF33B3BE5",
+            "mimeType": "text/html",
+            "name": "gform_ajax_frame_29",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      }, {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "940A8934B7B21E795DB245965EDD21C0",
+            "loaderId": "F4B302A0E9C799B1DD1355399A32EA46",
+            "mimeType": "text/html",
+            "name": "",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "blacklivesmatter.com",
+         "gatedAPIFeatures": [  ],
+         "id": "DC7658C76CEE7B2829DD6768A0EE1B81",
+         "loaderId": "1AD8AFAE7DCAE46A574BFB083F76B008",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://blacklivesmatter.com",
+         "url": "https://blacklivesmatter.com/"
+      }
+   }
+}
+[1694270465.853][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=79) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "arguments": [ {
+      "objectId": "6246268923087373101.1.13"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "b738ead1-72d0-4cea-845b-54b875082ef2",
+   "uniqueContextId": "6820428157629571333.-5751087653600026105"
+}
+[1694270465.864][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=79) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "6246268923087373101.1.14",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":{\"clickable\":true}}"
+         } ]
+      }
+   }
+}
+[1694270465.864][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=80) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "objectGroup": "b738ead1-72d0-4cea-845b-54b875082ef2"
+}
+[1694270465.864][DEBUG]: DevTools WebSocket Command: Input.dispatchMouseEvent (id=81) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "button": "none",
+   "buttons": 0,
+   "clickCount": 0,
+   "force": 0.0,
+   "modifiers": 0,
+   "pointerType": "mouse",
+   "tangentialPressure": 0.0,
+   "tiltX": 0,
+   "tiltY": 0,
+   "twist": 0,
+   "type": "mouseMoved",
+   "x": 1598,
+   "y": 116
+}
+[1694270465.864][DEBUG]: DevTools WebSocket Command: Input.dispatchMouseEvent (id=82) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "button": "left",
+   "buttons": 0,
+   "clickCount": 1,
+   "force": 0.0,
+   "modifiers": 0,
+   "pointerType": "mouse",
+   "tangentialPressure": 0.0,
+   "tiltX": 0,
+   "tiltY": 0,
+   "twist": 0,
+   "type": "mousePressed",
+   "x": 1598,
+   "y": 116
+}
+[1694270465.865][DEBUG]: DevTools WebSocket Command: Input.dispatchMouseEvent (id=83) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "button": "left",
+   "buttons": 1,
+   "clickCount": 1,
+   "force": 0.0,
+   "modifiers": 0,
+   "pointerType": "mouse",
+   "tangentialPressure": 0.0,
+   "tiltX": 0,
+   "tiltY": 0,
+   "twist": 0,
+   "type": "mouseReleased",
+   "x": 1598,
+   "y": 116
+}
+[1694270465.865][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=80) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270465.866][DEBUG]: DevTools WebSocket Response: Input.dispatchMouseEvent (id=81) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270465.869][DEBUG]: DevTools WebSocket Response: Input.dispatchMouseEvent (id=82) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270465.885][DEBUG]: DevTools WebSocket Event: Page.frameScheduledNavigation (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "delay": 0,
+   "frameId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+   "reason": "anchorClick",
+   "url": "https://secure.actblue.com/donate/2301_website_blm_gnf"
+}
+[1694270465.885][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "disposition": "currentTab",
+   "frameId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+   "reason": "anchorClick",
+   "url": "https://secure.actblue.com/donate/2301_website_blm_gnf"
+}
+[1694270465.885][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "DC7658C76CEE7B2829DD6768A0EE1B81"
+}
+[1694270465.889][DEBUG]: DevTools WebSocket Response: Input.dispatchMouseEvent (id=83) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270465.889][INFO]: Waiting for pending navigations...
+[1694270465.889][DEBUG]: DevTools WebSocket Event: Page.frameClearedScheduledNavigation (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "DC7658C76CEE7B2829DD6768A0EE1B81"
+}
+[1694270465.889][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=84) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270466.016][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270466.018][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "DC7658C76CEE7B2829DD6768A0EE1B81"
+}
+[1694270466.054][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270466.054][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "actblue.com",
+      "gatedAPIFeatures": [  ],
+      "id": "DC7658C76CEE7B2829DD6768A0EE1B81",
+      "loaderId": "921027AE5F41B45E1B569236DFE316E2",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://secure.actblue.com",
+      "url": "https://secure.actblue.com/donate/2301_website_blm_gnf"
+   },
+   "type": "Navigation"
+}
+[1694270466.055][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "context": {
+      "auxData": {
+         "frameId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://secure.actblue.com",
+      "uniqueId": "-2183261719949691139.8257252672725063946"
+   }
+}
+[1694270466.062][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=84) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270466.571][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=85) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[60026:60026:0909/201106.635453:INFO:CONSOLE(86)] "[bugsnag] Loaded!", source: https://secure.actblue.com/cf/assets/app/ca0a69922f5ae21bdb36.js?form_app=us (86)
+[1694270466.636][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "args": [ {
+      "type": "string",
+      "value": "[bugsnag]"
+   }, {
+      "type": "string",
+      "value": "Loaded!"
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 201587,
+         "functionName": "createClient",
+         "lineNumber": 85,
+         "scriptId": "8",
+         "url": "https://secure.actblue.com/cf/assets/app/ca0a69922f5ae21bdb36.js?form_app=us"
+      }, {
+         "columnNumber": 201796,
+         "functionName": "start",
+         "lineNumber": 85,
+         "scriptId": "8",
+         "url": "https://secure.actblue.com/cf/assets/app/ca0a69922f5ae21bdb36.js?form_app=us"
+      }, {
+         "columnNumber": 230196,
+         "functionName": "",
+         "lineNumber": 7,
+         "scriptId": "8",
+         "url": "https://secure.actblue.com/cf/assets/app/ca0a69922f5ae21bdb36.js?form_app=us"
+      }, {
+         "columnNumber": 361,
+         "functionName": "o",
+         "lineNumber": 0,
+         "scriptId": "8",
+         "url": "https://secure.actblue.com/cf/assets/app/ca0a69922f5ae21bdb36.js?form_app=us"
+      }, {
+         "columnNumber": 242993,
+         "functionName": "",
+         "lineNumber": 85,
+         "scriptId": "8",
+         "url": "https://secure.actblue.com/cf/assets/app/ca0a69922f5ae21bdb36.js?form_app=us"
+      }, {
+         "columnNumber": 361,
+         "functionName": "o",
+         "lineNumber": 0,
+         "scriptId": "8",
+         "url": "https://secure.actblue.com/cf/assets/app/ca0a69922f5ae21bdb36.js?form_app=us"
+      }, {
+         "columnNumber": 63907,
+         "functionName": "",
+         "lineNumber": 195,
+         "scriptId": "8",
+         "url": "https://secure.actblue.com/cf/assets/app/ca0a69922f5ae21bdb36.js?form_app=us"
+      }, {
+         "columnNumber": 361,
+         "functionName": "o",
+         "lineNumber": 0,
+         "scriptId": "8",
+         "url": "https://secure.actblue.com/cf/assets/app/ca0a69922f5ae21bdb36.js?form_app=us"
+      }, {
+         "columnNumber": 2687,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "8",
+         "url": "https://secure.actblue.com/cf/assets/app/ca0a69922f5ae21bdb36.js?form_app=us"
+      }, {
+         "columnNumber": 2698,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "8",
+         "url": "https://secure.actblue.com/cf/assets/app/ca0a69922f5ae21bdb36.js?form_app=us"
+      } ]
+   },
+   "timestamp": 1.6942704666308179e+12,
+   "type": "debug"
+}
+[1694270466.788][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=85) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270466.794][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "timestamp": 104045.278157
+}
+[1694270466.794][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=86) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270466.794][DEBUG]: DevTools WebSocket Event: Page.frameResized (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270466.807][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=86) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270467.309][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=87) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270467.310][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=87) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270467.811][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=88) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270467.845][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=88) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270468.225][DEBUG]: DevTools WebSocket Event: Page.navigatedWithinDocument (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+   "url": "https://secure.actblue.com/donate/2301_website_blm_gnf"
+}
+[1694270468.225][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=89) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270468.238][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=89) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270468.338][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "63CEC9EBD44D958314F58A87A7C7DAA5",
+   "parentFrameId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 38163,
+         "functionName": "be",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 104332,
+         "functionName": "",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 16614,
+         "functionName": "e.dispatch",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 17377,
+         "functionName": "e.then",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 104164,
+         "functionName": "jn",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 112137,
+         "functionName": "",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 16614,
+         "functionName": "e.dispatch",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 17377,
+         "functionName": "e.then",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 112112,
+         "functionName": "",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 19219,
+         "functionName": "n.try",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 107778,
+         "functionName": "render",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 129156,
+         "functionName": "",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 16614,
+         "functionName": "e.dispatch",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 17377,
+         "functionName": "e.then",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 128784,
+         "functionName": "v",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 129668,
+         "functionName": "render",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 114930,
+         "functionName": "r.componentDidMount",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 85618,
+         "functionName": "dc",
+         "lineNumber": 69,
+         "scriptId": "8",
+         "url": "https://secure.actblue.com/cf/assets/app/ca0a69922f5ae21bdb36.js?form_app=us"
+      }, {
+         "columnNumber": 102857,
+         "functionName": "",
+         "lineNumber": 69,
+         "scriptId": "8",
+         "url": "https://secure.actblue.com/cf/assets/app/ca0a69922f5ae21bdb36.js?form_app=us"
+      }, "..." ]
+   }
+}
+[1694270468.338][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "63CEC9EBD44D958314F58A87A7C7DAA5"
+}
+[1694270468.338][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=90) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270468.342][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "63CEC9EBD44D958314F58A87A7C7DAA5",
+      "loaderId": "4C64BAE55CD0014E8EE4D71C251E3304",
+      "mimeType": "text/html",
+      "name": "__zoid__paypal_buttons__eyJzZW5kZXIiOnsiZG9tYWluIjoiaHR0cHM6Ly9zZWN1cmUuYWN0Ymx1ZS5jb20ifSwibWV0YURhdGEiOnsid2luZG93UmVmIjp7InR5cGUiOiJwYXJlbnQiLCJkaXN0YW5jZSI6MH19LCJyZWZlcmVuY2UiOnsidHlwZSI6InJhd...",
+      "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1694270468.342][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "context": {
+      "auxData": {
+         "frameId": "63CEC9EBD44D958314F58A87A7C7DAA5",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://secure.actblue.com",
+      "uniqueId": "7025403473535214495.4310185758246156174"
+   }
+}
+[1694270468.342][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "63CEC9EBD44D958314F58A87A7C7DAA5"
+}
+[1694270468.343][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "D5A75CA280FED33FE2C4FE93BF50D759",
+   "parentFrameId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 38163,
+         "functionName": "be",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 104332,
+         "functionName": "",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 16614,
+         "functionName": "e.dispatch",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 17377,
+         "functionName": "e.then",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 104164,
+         "functionName": "jn",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 112137,
+         "functionName": "",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 16614,
+         "functionName": "e.dispatch",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 17377,
+         "functionName": "e.then",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 112112,
+         "functionName": "",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 19219,
+         "functionName": "n.try",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 107778,
+         "functionName": "render",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 129156,
+         "functionName": "",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 16614,
+         "functionName": "e.dispatch",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 17377,
+         "functionName": "e.then",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 128784,
+         "functionName": "v",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 129668,
+         "functionName": "render",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 114930,
+         "functionName": "r.componentDidMount",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 85618,
+         "functionName": "dc",
+         "lineNumber": 69,
+         "scriptId": "8",
+         "url": "https://secure.actblue.com/cf/assets/app/ca0a69922f5ae21bdb36.js?form_app=us"
+      }, {
+         "columnNumber": 102857,
+         "functionName": "",
+         "lineNumber": 69,
+         "scriptId": "8",
+         "url": "https://secure.actblue.com/cf/assets/app/ca0a69922f5ae21bdb36.js?form_app=us"
+      }, "..." ]
+   }
+}
+[1694270468.343][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "D5A75CA280FED33FE2C4FE93BF50D759"
+}
+[1694270468.345][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "D5A75CA280FED33FE2C4FE93BF50D759",
+      "loaderId": "802D45C00A6F9782AF029D67A919E0C7",
+      "mimeType": "text/html",
+      "name": "__zoid_prerender_frame__paypal_buttons_uid_4ae68eba24_mtq6nde6mdg__",
+      "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1694270468.346][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "context": {
+      "auxData": {
+         "frameId": "D5A75CA280FED33FE2C4FE93BF50D759",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 3,
+      "name": "",
+      "origin": "https://secure.actblue.com",
+      "uniqueId": "5224132255100148851.370874726642264350"
+   }
+}
+[1694270468.346][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "D5A75CA280FED33FE2C4FE93BF50D759"
+}
+[1694270468.347][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "F481FDB3C563CA7B64F426929971127D",
+   "parentFrameId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 104925,
+         "functionName": "",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 104986,
+         "functionName": "",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 16614,
+         "functionName": "e.dispatch",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 17377,
+         "functionName": "e.then",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 104164,
+         "functionName": "jn",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 112137,
+         "functionName": "",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 16614,
+         "functionName": "e.dispatch",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 17377,
+         "functionName": "e.then",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 112112,
+         "functionName": "",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 19219,
+         "functionName": "n.try",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 107778,
+         "functionName": "render",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 129156,
+         "functionName": "",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 16614,
+         "functionName": "e.dispatch",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 17377,
+         "functionName": "e.then",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 128784,
+         "functionName": "v",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 129668,
+         "functionName": "render",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 114930,
+         "functionName": "r.componentDidMount",
+         "lineNumber": 2,
+         "scriptId": "17",
+         "url": "https://www.paypal.com/sdk/js?client-id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&locale=en_US&disable-funding=credit,card&intent=capture&commit=false&enable-..."
+      }, {
+         "columnNumber": 85618,
+         "functionName": "dc",
+         "lineNumber": 69,
+         "scriptId": "8",
+         "url": "https://secure.actblue.com/cf/assets/app/ca0a69922f5ae21bdb36.js?form_app=us"
+      }, {
+         "columnNumber": 102857,
+         "functionName": "",
+         "lineNumber": 69,
+         "scriptId": "8",
+         "url": "https://secure.actblue.com/cf/assets/app/ca0a69922f5ae21bdb36.js?form_app=us"
+      }, "..." ]
+   }
+}
+[1694270468.347][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "F481FDB3C563CA7B64F426929971127D"
+}
+[1694270468.350][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "F481FDB3C563CA7B64F426929971127D",
+      "loaderId": "F93BE228A0B8011EB66D588C75F6152B",
+      "mimeType": "text/html",
+      "name": "__detect_close_uid_3854274eb3_mtq6nde6mdg__",
+      "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1694270468.350][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "context": {
+      "auxData": {
+         "frameId": "F481FDB3C563CA7B64F426929971127D",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 4,
+      "name": "",
+      "origin": "https://secure.actblue.com",
+      "uniqueId": "3647250505371084142.9038721911848885356"
+   }
+}
+[1694270468.350][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "F481FDB3C563CA7B64F426929971127D"
+}
+[1694270468.364][DEBUG]: DevTools WebSocket Event: Page.frameScheduledNavigation (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "delay": 0,
+   "frameId": "63CEC9EBD44D958314F58A87A7C7DAA5",
+   "reason": "scriptInitiated",
+   "url": "https://www.paypal.com/smart/buttons?env=production&style.label=paypal&style.layout=vertical&style.color=gold&style.shape=rect&style.tagline=false&style.height=44&style.menuPlacement=below&sdkVersi..."
+}
+[1694270468.364][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "disposition": "currentTab",
+   "frameId": "63CEC9EBD44D958314F58A87A7C7DAA5",
+   "reason": "scriptInitiated",
+   "url": "https://www.paypal.com/smart/buttons?env=production&style.label=paypal&style.layout=vertical&style.color=gold&style.shape=rect&style.tagline=false&style.height=44&style.menuPlacement=below&sdkVersi..."
+}
+[1694270468.364][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "63CEC9EBD44D958314F58A87A7C7DAA5"
+}
+[1694270468.369][DEBUG]: DevTools WebSocket Event: Page.frameClearedScheduledNavigation (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "63CEC9EBD44D958314F58A87A7C7DAA5"
+}
+[1694270468.400][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=90) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270468.573][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "2B5D6A9609BABB17773CC2933F2E0F94",
+   "parentFrameId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 54381,
+         "functionName": "_render",
+         "lineNumber": 4,
+         "scriptId": "20",
+         "url": "https://www.paypalobjects.com/muse/muse.js"
+      }, {
+         "columnNumber": 54681,
+         "functionName": "render",
+         "lineNumber": 4,
+         "scriptId": "20",
+         "url": "https://www.paypalobjects.com/muse/muse.js"
+      }, {
+         "columnNumber": 55670,
+         "functionName": "i",
+         "lineNumber": 4,
+         "scriptId": "20",
+         "url": "https://www.paypalobjects.com/muse/muse.js"
+      }, {
+         "columnNumber": 55871,
+         "functionName": "R.window.\u003Ccomputed>",
+         "lineNumber": 4,
+         "scriptId": "20",
+         "url": "https://www.paypalobjects.com/muse/muse.js"
+      }, {
+         "columnNumber": 976,
+         "functionName": "a",
+         "lineNumber": 0,
+         "scriptId": "19",
+         "url": "https://www.paypal.com/tagmanager/pptm.js?id=secure.actblue.com&t=xo&v=5.0.395&source=payments_sdk&client_id=AbHo6hBEDmCHulDhRMkCVk7FDed5zE1-mNo7SQvo_yxeLvGylM5mGh5IOjx0AV9sTHhHDjD4A443Dybb&disable..."
+      } ]
+   }
+}
+[1694270468.573][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=91) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270468.573][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "2B5D6A9609BABB17773CC2933F2E0F94"
+}
+[1694270468.605][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=91) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270468.606][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "sessionId": "A75D86FF0FEBE966025A6CF713017C23",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "F2C087C6DB94EECFC0246D3A47574731",
+      "canAccessOpener": false,
+      "targetId": "2B5D6A9609BABB17773CC2933F2E0F94",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1694270468.606][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=92) (session_id=A75D86FF0FEBE966025A6CF713017C23) A75D86FF0FEBE966025A6CF713017C23 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1694270468.606][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=93) (session_id=A75D86FF0FEBE966025A6CF713017C23) A75D86FF0FEBE966025A6CF713017C23 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1694270468.606][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=94) (session_id=A75D86FF0FEBE966025A6CF713017C23) A75D86FF0FEBE966025A6CF713017C23 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1694270468.606][DEBUG]: DevTools WebSocket Command: Page.enable (id=95) (session_id=A75D86FF0FEBE966025A6CF713017C23) A75D86FF0FEBE966025A6CF713017C23 {
+}
+[1694270468.606][DEBUG]: DevTools WebSocket Command: Page.enable (id=96) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270468.608][DEBUG]: DevTools WebSocket Response: Page.enable (id=96) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270468.609][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "F2C087C6DB94EECFC0246D3A47574731",
+      "canAccessOpener": false,
+      "targetId": "2B5D6A9609BABB17773CC2933F2E0F94",
+      "title": "https://www.paypalobjects.com/muse/analytics/index.html#frameId=86d427b2-dc5b-4d3c-885c-e6404a6448a0&propertyId=NGJ83G9Z8QXZ8-1&flow=visitor-info&variant=analytics&mrid=NGJ83G9Z8QXZ8&isMobileEnable...",
+      "type": "iframe",
+      "url": "https://www.paypalobjects.com/muse/analytics/index.html#frameId=86d427b2-dc5b-4d3c-885c-e6404a6448a0&propertyId=NGJ83G9Z8QXZ8-1&flow=visitor-info&variant=analytics&mrid=NGJ83G9Z8QXZ8&isMobileEnable..."
+   }
+}
+[1694270468.609][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "2B5D6A9609BABB17773CC2933F2E0F94"
+}
+[1694270468.611][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "2B5D6A9609BABB17773CC2933F2E0F94",
+   "reason": "swap"
+}
+[1694270468.613][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=92) (session_id=A75D86FF0FEBE966025A6CF713017C23) A75D86FF0FEBE966025A6CF713017C23 {
+   "identifier": "1"
+}
+[1694270468.613][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=93) (session_id=A75D86FF0FEBE966025A6CF713017C23) A75D86FF0FEBE966025A6CF713017C23 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1694270468.613][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=94) (session_id=A75D86FF0FEBE966025A6CF713017C23) A75D86FF0FEBE966025A6CF713017C23 {
+}
+[1694270468.613][DEBUG]: DevTools WebSocket Response: Page.enable (id=95) (session_id=A75D86FF0FEBE966025A6CF713017C23) A75D86FF0FEBE966025A6CF713017C23 {
+}
+[1694270468.613][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=97) (session_id=A75D86FF0FEBE966025A6CF713017C23) A75D86FF0FEBE966025A6CF713017C23 {
+}
+[1694270468.625][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=A75D86FF0FEBE966025A6CF713017C23) A75D86FF0FEBE966025A6CF713017C23 {
+   "context": {
+      "auxData": {
+         "frameId": "2B5D6A9609BABB17773CC2933F2E0F94",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://www.paypalobjects.com",
+      "uniqueId": "2027087773042185921.-1692159642234367508"
+   }
+}
+[1694270468.625][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=97) (session_id=A75D86FF0FEBE966025A6CF713017C23) A75D86FF0FEBE966025A6CF713017C23 {
+}
+[1694270468.625][DEBUG]: DevTools WebSocket Command: Page.enable (id=98) (session_id=A75D86FF0FEBE966025A6CF713017C23) A75D86FF0FEBE966025A6CF713017C23 {
+}
+[1694270468.628][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=A75D86FF0FEBE966025A6CF713017C23) A75D86FF0FEBE966025A6CF713017C23 {
+   "timestamp": 104047.111463
+}
+[1694270468.628][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=A75D86FF0FEBE966025A6CF713017C23) A75D86FF0FEBE966025A6CF713017C23 {
+   "frameId": "2B5D6A9609BABB17773CC2933F2E0F94"
+}
+[1694270468.628][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=A75D86FF0FEBE966025A6CF713017C23) A75D86FF0FEBE966025A6CF713017C23 {
+   "timestamp": 104047.111649
+}
+[1694270468.628][DEBUG]: DevTools WebSocket Response: Page.enable (id=98) (session_id=A75D86FF0FEBE966025A6CF713017C23) A75D86FF0FEBE966025A6CF713017C23 {
+}
+[1694270468.628][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=99) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270468.629][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=99) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270468.629][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=100) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "document",
+   "objectGroup": "930aa869-6e11-46de-adc1-3ef32283fd76"
+}
+[1694270468.630][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=100) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "4880846172618223076.1.1",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1694270468.630][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=101) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "objectId": "4880846172618223076.1.1"
+}
+[1694270468.630][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=101) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "https://secure.actblue.com/donate/2301_website_blm_gnf",
+      "childNodeCount": 2,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "https://secure.actblue.com/donate/2301_website_blm_gnf",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1694270468.630][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=102) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "objectGroup": "930aa869-6e11-46de-adc1-3ef32283fd76"
+}
+[1694270468.631][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=103) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-2183261719949691139.8257252672725063946"
+}
+[1694270468.631][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=102) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270468.631][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=103) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "type": "string",
+      "value": "interactive"
+   }
+}
+[1694270468.643][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "017F50960F67AE278ADF8E2D24FC0259",
+   "parentFrameId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 240,
+         "functionName": "",
+         "lineNumber": 166,
+         "scriptId": "21",
+         "url": "https://pay.google.com/gp/p/js/pay.js"
+      }, {
+         "columnNumber": 344,
+         "functionName": "",
+         "lineNumber": 166,
+         "scriptId": "21",
+         "url": "https://pay.google.com/gp/p/js/pay.js"
+      }, {
+         "columnNumber": 9,
+         "functionName": "",
+         "lineNumber": 319,
+         "scriptId": "21",
+         "url": "https://pay.google.com/gp/p/js/pay.js"
+      } ]
+   }
+}
+[1694270468.643][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=104) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270468.643][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "017F50960F67AE278ADF8E2D24FC0259"
+}
+[1694270468.657][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=104) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270468.922][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "sessionId": "23066E593C57B4681025915665863D8A",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "F2C087C6DB94EECFC0246D3A47574731",
+      "canAccessOpener": false,
+      "targetId": "63CEC9EBD44D958314F58A87A7C7DAA5",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1694270468.922][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=105) (session_id=23066E593C57B4681025915665863D8A) 23066E593C57B4681025915665863D8A {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1694270468.922][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=106) (session_id=23066E593C57B4681025915665863D8A) 23066E593C57B4681025915665863D8A {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1694270468.922][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=107) (session_id=23066E593C57B4681025915665863D8A) 23066E593C57B4681025915665863D8A {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1694270468.922][DEBUG]: DevTools WebSocket Command: Page.enable (id=108) (session_id=23066E593C57B4681025915665863D8A) 23066E593C57B4681025915665863D8A {
+}
+[1694270468.922][DEBUG]: DevTools WebSocket Command: Page.enable (id=109) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270468.925][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "F2C087C6DB94EECFC0246D3A47574731",
+      "canAccessOpener": false,
+      "targetId": "63CEC9EBD44D958314F58A87A7C7DAA5",
+      "title": "https://www.paypal.com/smart/buttons?env=production&style.label=paypal&style.layout=vertical&style.color=gold&style.shape=rect&style.tagline=false&style.height=44&style.menuPlacement=below&sdkVersi...",
+      "type": "iframe",
+      "url": "https://www.paypal.com/smart/buttons?env=production&style.label=paypal&style.layout=vertical&style.color=gold&style.shape=rect&style.tagline=false&style.height=44&style.menuPlacement=below&sdkVersi..."
+   }
+}
+[1694270468.928][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=105) (session_id=23066E593C57B4681025915665863D8A) 23066E593C57B4681025915665863D8A {
+   "identifier": "1"
+}
+[1694270468.928][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=106) (session_id=23066E593C57B4681025915665863D8A) 23066E593C57B4681025915665863D8A {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1694270468.928][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=107) (session_id=23066E593C57B4681025915665863D8A) 23066E593C57B4681025915665863D8A {
+}
+[1694270468.928][DEBUG]: DevTools WebSocket Response: Page.enable (id=108) (session_id=23066E593C57B4681025915665863D8A) 23066E593C57B4681025915665863D8A {
+}
+[1694270469.095][DEBUG]: DevTools WebSocket Response: Page.enable (id=109) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270469.096][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=110) (session_id=23066E593C57B4681025915665863D8A) 23066E593C57B4681025915665863D8A {
+}
+[1694270469.096][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "63CEC9EBD44D958314F58A87A7C7DAA5"
+}
+[1694270469.096][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=23066E593C57B4681025915665863D8A) 23066E593C57B4681025915665863D8A {
+   "context": {
+      "auxData": {
+         "frameId": "63CEC9EBD44D958314F58A87A7C7DAA5",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://www.paypal.com",
+      "uniqueId": "2048182761280115129.-4351901652468136439"
+   }
+}
+[1694270469.096][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=110) (session_id=23066E593C57B4681025915665863D8A) 23066E593C57B4681025915665863D8A {
+}
+[1694270469.096][DEBUG]: DevTools WebSocket Command: Page.enable (id=111) (session_id=23066E593C57B4681025915665863D8A) 23066E593C57B4681025915665863D8A {
+}
+[1694270469.100][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "63CEC9EBD44D958314F58A87A7C7DAA5",
+   "reason": "swap"
+}
+[1694270469.100][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "executionContextId": 2,
+   "executionContextUniqueId": "7025403473535214495.4310185758246156174"
+}
+[1694270469.101][DEBUG]: DevTools WebSocket Response: Page.enable (id=111) (session_id=23066E593C57B4681025915665863D8A) 23066E593C57B4681025915665863D8A {
+}
+[1694270469.101][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=112) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270469.103][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=112) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270469.104][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=113) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "document",
+   "objectGroup": "998b9ce1-114a-43b9-b1f4-9651472ccd01"
+}
+[1694270469.105][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=113) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "4880846172618223076.1.2",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1694270469.105][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=114) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "objectId": "4880846172618223076.1.2"
+}
+[1694270469.106][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=114) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "https://secure.actblue.com/donate/2301_website_blm_gnf",
+      "childNodeCount": 2,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "https://secure.actblue.com/donate/2301_website_blm_gnf",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1694270469.106][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=115) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "objectGroup": "998b9ce1-114a-43b9-b1f4-9651472ccd01"
+}
+[1694270469.106][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=116) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-2183261719949691139.8257252672725063946"
+}
+[1694270469.106][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=115) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270469.106][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=116) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "type": "string",
+      "value": "interactive"
+   }
+}
+[1694270469.190][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "sessionId": "6822945EA8D32B4B6E3897995B461A9A",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "F2C087C6DB94EECFC0246D3A47574731",
+      "canAccessOpener": false,
+      "targetId": "017F50960F67AE278ADF8E2D24FC0259",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1694270469.190][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=117) (session_id=6822945EA8D32B4B6E3897995B461A9A) 6822945EA8D32B4B6E3897995B461A9A {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1694270469.191][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=118) (session_id=6822945EA8D32B4B6E3897995B461A9A) 6822945EA8D32B4B6E3897995B461A9A {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1694270469.191][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=119) (session_id=6822945EA8D32B4B6E3897995B461A9A) 6822945EA8D32B4B6E3897995B461A9A {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1694270469.191][DEBUG]: DevTools WebSocket Command: Page.enable (id=120) (session_id=6822945EA8D32B4B6E3897995B461A9A) 6822945EA8D32B4B6E3897995B461A9A {
+}
+[1694270469.191][DEBUG]: DevTools WebSocket Command: Page.enable (id=121) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270469.193][DEBUG]: DevTools WebSocket Response: Page.enable (id=121) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[60026:60026:0909/201109.198353:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'.", source:  (0)
+[1694270469.200][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "F2C087C6DB94EECFC0246D3A47574731",
+      "canAccessOpener": false,
+      "targetId": "017F50960F67AE278ADF8E2D24FC0259",
+      "title": "https://pay.google.com/gp/p/ui/payframe?origin=https%3A%2F%2Fsecure.actblue.com&mid=",
+      "type": "iframe",
+      "url": "https://pay.google.com/gp/p/ui/payframe?origin=https%3A%2F%2Fsecure.actblue.com&mid="
+   }
+}
+[1694270469.200][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "017F50960F67AE278ADF8E2D24FC0259"
+}
+[1694270469.201][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "017F50960F67AE278ADF8E2D24FC0259",
+   "reason": "swap"
+}
+[1694270469.209][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=117) (session_id=6822945EA8D32B4B6E3897995B461A9A) 6822945EA8D32B4B6E3897995B461A9A {
+   "identifier": "1"
+}
+[1694270469.209][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=118) (session_id=6822945EA8D32B4B6E3897995B461A9A) 6822945EA8D32B4B6E3897995B461A9A {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1694270469.209][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=119) (session_id=6822945EA8D32B4B6E3897995B461A9A) 6822945EA8D32B4B6E3897995B461A9A {
+}
+[1694270469.209][DEBUG]: DevTools WebSocket Response: Page.enable (id=120) (session_id=6822945EA8D32B4B6E3897995B461A9A) 6822945EA8D32B4B6E3897995B461A9A {
+}
+[1694270469.209][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=122) (session_id=6822945EA8D32B4B6E3897995B461A9A) 6822945EA8D32B4B6E3897995B461A9A {
+}
+[1694270469.210][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=23066E593C57B4681025915665863D8A) 23066E593C57B4681025915665863D8A {
+   "timestamp": 104047.69161
+}
+[1694270469.210][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=23066E593C57B4681025915665863D8A) 23066E593C57B4681025915665863D8A {
+   "frameId": "63CEC9EBD44D958314F58A87A7C7DAA5"
+}
+[1694270469.210][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=23066E593C57B4681025915665863D8A) 23066E593C57B4681025915665863D8A {
+   "timestamp": 104047.691714
+}
+[1694270469.237][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=6822945EA8D32B4B6E3897995B461A9A) 6822945EA8D32B4B6E3897995B461A9A {
+   "context": {
+      "auxData": {
+         "frameId": "017F50960F67AE278ADF8E2D24FC0259",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://pay.google.com",
+      "uniqueId": "-7421601382013133406.1413687680389491467"
+   }
+}
+[1694270469.237][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=122) (session_id=6822945EA8D32B4B6E3897995B461A9A) 6822945EA8D32B4B6E3897995B461A9A {
+}
+[1694270469.237][DEBUG]: DevTools WebSocket Command: Page.enable (id=123) (session_id=6822945EA8D32B4B6E3897995B461A9A) 6822945EA8D32B4B6E3897995B461A9A {
+}
+[1694270469.237][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=6822945EA8D32B4B6E3897995B461A9A) 6822945EA8D32B4B6E3897995B461A9A {
+   "timestamp": 104047.714619
+}
+[1694270469.240][DEBUG]: DevTools WebSocket Response: Page.enable (id=123) (session_id=6822945EA8D32B4B6E3897995B461A9A) 6822945EA8D32B4B6E3897995B461A9A {
+}
+[1694270469.240][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=124) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270469.240][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=124) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270469.240][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=125) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "document",
+   "objectGroup": "2d7ffcb9-04b3-4cd0-b3e3-526e3264ab4d"
+}
+[1694270469.241][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=125) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "4880846172618223076.1.3",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1694270469.241][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=126) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "objectId": "4880846172618223076.1.3"
+}
+[1694270469.241][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=126) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "https://secure.actblue.com/donate/2301_website_blm_gnf",
+      "childNodeCount": 2,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "https://secure.actblue.com/donate/2301_website_blm_gnf",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1694270469.241][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=127) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "objectGroup": "2d7ffcb9-04b3-4cd0-b3e3-526e3264ab4d"
+}
+[1694270469.241][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=128) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-2183261719949691139.8257252672725063946"
+}
+[1694270469.242][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=127) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270469.242][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=128) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "type": "string",
+      "value": "interactive"
+   }
+}
+[1694270469.397][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=6822945EA8D32B4B6E3897995B461A9A) 6822945EA8D32B4B6E3897995B461A9A {
+   "timestamp": 104047.880829
+}
+[1694270469.397][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=6822945EA8D32B4B6E3897995B461A9A) 6822945EA8D32B4B6E3897995B461A9A {
+   "frameId": "017F50960F67AE278ADF8E2D24FC0259"
+}
+[1694270469.397][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=129) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270469.398][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=129) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[60026:60026:0909/201109.623067:INFO:CONSOLE(0)] "Each dictionary in the list "icons" should contain a non-empty UTF8 string field "sizes".", source: https://secure.actblue.com/donate/2301_website_blm_gnf (0)
+[60026:60026:0909/201109.623144:INFO:CONSOLE(0)] "Each dictionary in the list "icons" should contain a non-empty UTF8 string field "type".", source: https://secure.actblue.com/donate/2301_website_blm_gnf (0)
+[1694270469.624][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Each dictionary in the list \"icons\" should contain a non-empty UTF8 string field \"sizes\".",
+      "timestamp": 1.694270469622904e+12,
+      "url": "https://secure.actblue.com/donate/2301_website_blm_gnf"
+   }
+}
+[1694270469.624][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Each dictionary in the list \"icons\" should contain a non-empty UTF8 string field \"type\".",
+      "timestamp": 1.69427046962299e+12,
+      "url": "https://secure.actblue.com/donate/2301_website_blm_gnf"
+   }
+}
+[1694270469.624][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=130) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270469.625][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=130) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[60026:60026:0909/201110.003555:INFO:CONSOLE(0)] "Each dictionary in the list "icons" should contain a non-empty UTF8 string field "sizes".", source: https://secure.actblue.com/donate/2301_website_blm_gnf (0)
+[60026:60026:0909/201110.003646:INFO:CONSOLE(0)] "Each dictionary in the list "icons" should contain a non-empty UTF8 string field "type".", source: https://secure.actblue.com/donate/2301_website_blm_gnf (0)
+[1694270470.004][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Each dictionary in the list \"icons\" should contain a non-empty UTF8 string field \"sizes\".",
+      "timestamp": 1.694270470002278e+12,
+      "url": "https://secure.actblue.com/donate/2301_website_blm_gnf"
+   }
+}
+[1694270470.004][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Each dictionary in the list \"icons\" should contain a non-empty UTF8 string field \"type\".",
+      "timestamp": 1.694270470002415e+12,
+      "url": "https://secure.actblue.com/donate/2301_website_blm_gnf"
+   }
+}
+[1694270470.004][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=131) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270470.014][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "timestamp": 104048.497215
+}
+[1694270470.014][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=132) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-2183261719949691139.8257252672725063946"
+}
+[1694270470.014][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "DC7658C76CEE7B2829DD6768A0EE1B81"
+}
+[1694270470.015][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=131) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270470.016][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=132) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1694270470.016][INFO]: Done waiting for pending navigations. Status: ok
+[1694270470.016][INFO]: [fb59e700990bb50f700c8d36b095de41] RESPONSE ClickElement
+[1694270470.775][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameId": "D5A75CA280FED33FE2C4FE93BF50D759",
+   "reason": "remove"
+}
+[1694270470.775][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "executionContextId": 3,
+   "executionContextUniqueId": "5224132255100148851.370874726642264350"
+}
+[1694270473.037][INFO]: [fb59e700990bb50f700c8d36b095de41] COMMAND FindElements {
+   "using": "css selector",
+   "value": "#contribution_blurb > p:nth-child(2) > strong > i"
+}
+[1694270473.037][INFO]: Waiting for pending navigations...
+[1694270473.037][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=133) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270473.039][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=133) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270473.039][INFO]: Done waiting for pending navigations. Status: ok
+[1694270473.039][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=134) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270473.041][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=134) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "F481FDB3C563CA7B64F426929971127D",
+            "loaderId": "F93BE228A0B8011EB66D588C75F6152B",
+            "mimeType": "text/html",
+            "name": "__detect_close_uid_3854274eb3_mtq6nde6mdg__",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "actblue.com",
+         "gatedAPIFeatures": [  ],
+         "id": "DC7658C76CEE7B2829DD6768A0EE1B81",
+         "loaderId": "921027AE5F41B45E1B569236DFE316E2",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://secure.actblue.com",
+         "url": "https://secure.actblue.com/donate/2301_website_blm_gnf"
+      }
+   }
+}
+[1694270473.041][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=135) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270473.043][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=135) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "F481FDB3C563CA7B64F426929971127D",
+            "loaderId": "F93BE228A0B8011EB66D588C75F6152B",
+            "mimeType": "text/html",
+            "name": "__detect_close_uid_3854274eb3_mtq6nde6mdg__",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "actblue.com",
+         "gatedAPIFeatures": [  ],
+         "id": "DC7658C76CEE7B2829DD6768A0EE1B81",
+         "loaderId": "921027AE5F41B45E1B569236DFE316E2",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://secure.actblue.com",
+         "url": "https://secure.actblue.com/donate/2301_website_blm_gnf"
+      }
+   }
+}
+[1694270473.048][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=136) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "d88613c1-6d1a-4d99-8049-80bc1f55d1d5",
+   "uniqueContextId": "-2183261719949691139.8257252672725063946"
+}
+[1694270473.070][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=136) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "className": "Array",
+      "description": "Array(2)",
+      "objectId": "4880846172618223076.1.4",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":0}]}"
+         }, {
+            "type": "node",
+            "value": {
+               "attributes": {
+               },
+               "backendNodeId": 33,
+               "childNodeCount": 1,
+               "localName": "i",
+               "namespaceURI": "http://www.w3.org/1999/xhtml",
+               "nodeType": 1,
+               "shadowRoot": null
+            }
+         } ]
+      }
+   }
+}
+[1694270473.071][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=137) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "objectGroup": "d88613c1-6d1a-4d99-8049-80bc1f55d1d5"
+}
+[1694270473.071][INFO]: Waiting for pending navigations...
+[1694270473.071][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=138) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270473.072][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=137) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270473.073][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=138) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270473.073][INFO]: Done waiting for pending navigations. Status: ok
+[1694270473.073][INFO]: [fb59e700990bb50f700c8d36b095de41] RESPONSE FindElements [ {
+   "element-6066-11e4-a52e-4f735466cecf": "921027AE5F41B45E1B569236DFE316E2_element_33"
+} ]
+[1694270473.082][INFO]: [fb59e700990bb50f700c8d36b095de41] COMMAND GetElementText {
+   "id": "921027AE5F41B45E1B569236DFE316E2_element_33"
+}
+[1694270473.082][INFO]: Waiting for pending navigations...
+[1694270473.082][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=139) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270473.083][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=139) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270473.083][INFO]: Done waiting for pending navigations. Status: ok
+[1694270473.084][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=140) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270473.085][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=140) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "F481FDB3C563CA7B64F426929971127D",
+            "loaderId": "F93BE228A0B8011EB66D588C75F6152B",
+            "mimeType": "text/html",
+            "name": "__detect_close_uid_3854274eb3_mtq6nde6mdg__",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "actblue.com",
+         "gatedAPIFeatures": [  ],
+         "id": "DC7658C76CEE7B2829DD6768A0EE1B81",
+         "loaderId": "921027AE5F41B45E1B569236DFE316E2",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://secure.actblue.com",
+         "url": "https://secure.actblue.com/donate/2301_website_blm_gnf"
+      }
+   }
+}
+[1694270473.085][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=141) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "backendNodeId": 33,
+   "objectGroup": "3092dfbe-1ada-45e6-98d3-e3c5c94dcbc0"
+}
+[1694270473.087][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=141) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "object": {
+      "className": "HTMLElement",
+      "description": "i",
+      "objectId": "4880846172618223076.1.5",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1694270473.087][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=142) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270473.088][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=142) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "F481FDB3C563CA7B64F426929971127D",
+            "loaderId": "F93BE228A0B8011EB66D588C75F6152B",
+            "mimeType": "text/html",
+            "name": "__detect_close_uid_3854274eb3_mtq6nde6mdg__",
+            "parentId": "DC7658C76CEE7B2829DD6768A0EE1B81",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": "about:blank"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "actblue.com",
+         "gatedAPIFeatures": [  ],
+         "id": "DC7658C76CEE7B2829DD6768A0EE1B81",
+         "loaderId": "921027AE5F41B45E1B569236DFE316E2",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://secure.actblue.com",
+         "url": "https://secure.actblue.com/donate/2301_website_blm_gnf"
+      }
+   }
+}
+[1694270473.091][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=143) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "arguments": [ {
+      "objectId": "4880846172618223076.1.5"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "3092dfbe-1ada-45e6-98d3-e3c5c94dcbc0",
+   "uniqueContextId": "-2183261719949691139.8257252672725063946"
+}
+[1694270473.106][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=143) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "4880846172618223076.1.6",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"Fund the Movement\"}"
+         } ]
+      }
+   }
+}
+[1694270473.107][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=144) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "objectGroup": "3092dfbe-1ada-45e6-98d3-e3c5c94dcbc0"
+}
+[1694270473.107][INFO]: Waiting for pending navigations...
+[1694270473.107][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=145) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "expression": "1"
+}
+[1694270473.107][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=144) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+}
+[1694270473.107][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=145) (session_id=91D9CBED2154C5E5667A7C561AD0E138) DC7658C76CEE7B2829DD6768A0EE1B81 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1694270473.107][INFO]: Done waiting for pending navigations. Status: ok
+[1694270473.107][INFO]: [fb59e700990bb50f700c8d36b095de41] RESPONSE GetElementText "Fund the Movement"
+[60026:60026:0909/201115.671987:WARNING:controller_impl.cc(1188)] Background download complete, client: 6, completion type: 0, file size:5089
+[60026:60026:0909/201115.731929:WARNING:controller_impl.cc(1188)] Background download complete, client: 6, completion type: 0, file size:265059
+[60026:60026:0909/201116.130028:WARNING:controller_impl.cc(1188)] Background download complete, client: 6, completion type: 0, file size:45085
+[1694270476.139][INFO]: [fb59e700990bb50f700c8d36b095de41] COMMAND Quit {
+}
+[5:5:0100/000000.177507:ERROR:zygote_linux.cc(622)] Zygote could not fork: process_type utility numfds 5 child_pid -1
+[5:5:0100/000000.193254:ERROR:zygote_linux.cc(654)] write: Broken pipe (32)
+[1694270476.241][INFO]: [fb59e700990bb50f700c8d36b095de41] RESPONSE Quit
+[1694270476.241][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1694270476.241][DEBUG]: Log type 'browser' lost 6 entries on destruction

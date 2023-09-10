@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="mocha.test.file"
+    errors="0" failures="1" hostname="" id="" package="mocha.test.file" skipped="0"
+    tests="1" time="32.94" timestamp="">
+  
+    <testcase name="should be filled successfully" classname="mocha.test.file" time="16.14" assertions="5">
+
+    
+
+    
+
+    
+
+      <failure message="Expected element &lt;#et_pb_contact_form_0&gt; text to equal: &#34;Form filled out successfully&#34; - expected &#34;equal &#39;Form filled out successfully&#39;&#34; but got: &#34;Make sure you fill in all required fields.
+this is a paragraph
+Submit&#34; (5022ms)">    at DescribeInstance.&lt;anonymous&gt; (/home/knoldus/nightwatch-tutorial/tests/mocha.test.file.js:12:57)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

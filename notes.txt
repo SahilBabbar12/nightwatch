@@ -1,0 +1,36 @@
+    clearValue -> to ensure that there is no value in the field before you actually enter the information.
+
+    click
+    keys ->method sends a sequence of strokes to an active element suppose we want to press backspace,enter,tab, subtract ,add etc.
+    moveToElement -> basically moves the cursor to a particular XY offset on the browser.
+    
+    setValue
+
+    submitForm ->  this submitForm element will only work if within the html document you actually see that form tag, 
+    and then you'll be able to submit the button #submit by using that command.
+
+    mouse operations -->
+    client.mouseButtonClick('right')
+    .doubleClick()
+    .mouseButtonDown()
+
+    window operations ->
+    getWindowPosition()
+    maximizeWindow
+    fullscreennWindow
+    windowHandles -- retrieve list of all the windows available in the session
+    openNewWindow('tab')
+    switchWindow --> switch to  a specific window
+    syntax ->   
+        .windowHandles((results) =>{
+            const newWindow =results.value[1];      // retrieve all windowHandles and then retrieve the specific window through its index value 
+            client.switchWindow(newWindow)
+        }) 
+
+    to navigate to a particular page -->
+    ComplicatedPage
+                .navigate()
+
+
+    Nightwatch reporters -->
+    stdout(terminal) and JUnit(XML)
